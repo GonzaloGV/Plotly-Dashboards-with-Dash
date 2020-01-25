@@ -7,21 +7,28 @@
 ######
 
 # Perform imports here:
-
-
-
+import plotly.offline as pyo
+import plotly.graph_objs as go
+import numpy as np
 
 # Define a data variable
+x = np.random.randn(1000)
+y = np.random.rand(1000)
 
-
-
-
-
+data = [go.Scatter(
+    x=x,
+    y=y,
+    mode='markers')
+]
 
 # Define the layout
-
-
-
-
+layout = go.Layout(
+    title='Scatter Excercise',
+    xaxis=dict(title='Random normal values'),
+    yaxis=dict(title='Random uniform values'),
+    hovermode='closest'
+)
 
 # Create a fig from data and layout, and plot the fig
+fig = go.Figure(data=data, layout=layout)
+pyo.plot(fig, link_text='Excercise Scatter.html')
