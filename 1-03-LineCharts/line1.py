@@ -20,13 +20,13 @@ trace0 = go.Scatter(
 trace1 = go.Scatter(
     x = x_values,
     y = y_values,
-    mode = 'lines+markers',
+    mode = 'lines+markers', 
     name = 'lines+markers'
 )
 trace2 = go.Scatter(
     x = x_values,
     y = y_values-5,
-    mode = 'lines',
+    mode = 'lines', # Aca esta lo importante
     name = 'lines'
 )
 data = [trace0, trace1, trace2]  # assign traces to data
