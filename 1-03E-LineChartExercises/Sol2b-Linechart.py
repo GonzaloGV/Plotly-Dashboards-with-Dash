@@ -14,7 +14,7 @@ import plotly.graph_objs as go
 import pandas as pd
 
 # Create a pandas DataFrame from 2010YumaAZ.csv
-df = pd.read_csv('../data/2010YumaAZ.csv')
+df = pd.read_csv('../Data/2010YumaAZ.csv')
 
 # Define a data variable
 data = [{
